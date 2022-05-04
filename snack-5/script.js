@@ -8,13 +8,10 @@ const number = [];
 let askNumber;
 for (let i = 0; i < 6; i++) {
     askNumber = Number(prompt("Inserisci un numero"));
+    // 3. SE il numero inserito è dispari lo inserisco nell'array
     if (askNumber % 2 === 1) {
     number.push(askNumber);
     }
 }
 
 console.log(number);
-
-// 3. SE il numero inserito è dispari
-//    ALLORA inserisco il numero nell'array
-
