@@ -8,12 +8,10 @@ const firstWord = prompt("Inserisci una parola");
 const secondWord = prompt("Inserisci un'altra parola");
 
 // 3. Stampo in console la parola più corta e poi quella più lunga
-if (firstWord.length > secondWord.length) {
-    console.log(secondWord);
-    console.log(firstWord);
-} else if (firstWord.length < secondWord.length) {
-    console.log(firstWord);
-    console.log(secondWord);
+if (firstWord.length < secondWord.length) {
+    console.log(firstWord, secondWord);
+} else if (firstWord.length > secondWord.length) {
+    console.log(secondWord, firstWord);
 } else {
     console.log("Hanno la stessa lunghezza");
 }
